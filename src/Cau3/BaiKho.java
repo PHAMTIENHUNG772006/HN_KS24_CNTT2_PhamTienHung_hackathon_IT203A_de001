@@ -33,14 +33,14 @@ public class BaiKho {
 
 
         for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j < B.length; j++) {
+            for (int j = 0; j < B.length; j++) {// lấy ra các phần tử mảng B so sánh lần lượt nếu có trong A thì cộng count
                 if (B[j] == A[i]){
                     count++;
                 }
             }
         }
 
-        if (count == B.length){
+        if (count == B.length){// nếu đủ bằng độ dài của mảng B thì có đủ các phần tử của mảng B trong mảng A
             System.out.println("Mảng B là mảng con của A");
         }else {
             System.out.println("Mảng B không phải là mảng con của A");
